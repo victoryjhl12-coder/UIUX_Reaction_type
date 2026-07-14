@@ -1,0 +1,70 @@
+.line1 {
+    border-top: 1px solid #000;
+    position: relative;
+    transform: translatey(25px);
+}
+.width {
+    position: absolute;
+    /* 퍼센테이지 사용 각각 x,y축 설정 가능, 한가지 방향 변형시킬 수 있는 코드 */
+    /* transform: translate(x,y); */
+    transform: translate(-50%,100px);
+    left: 50%;
+}
+.h-ln1, .h-ln2, .h-ln3, .h-ln4 {
+    position: absolute;
+    border-right: 1px solid #000;
+    height: 50px;
+    top : 50%;
+    transform: translatey(-50%);
+}
+.h-ln1 {
+    left: 360px;
+}
+.h-ln2 {
+    left: 760px;
+}
+.h-ln3 {
+    left: 1080px;
+}
+.h-ln4 {
+    left : 1440px;
+}
+.h-ln::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.h-ln1::after{content: "360";}
+.h-ln2::after{content: "760";}
+.h-ln3::after{content: "1080";}
+.h-ln4::after{content: "1440";}
+.box1 {
+    /* left  top은 화면 기준 트렌스폼은 상자 기준 */
+    width: 300px; height: 300px;
+    position: fixed;
+    background-color: #a7a7a7;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+}
+/* 실험코드 -> 실무 코드 x */
+body{height: 100vh;}
+body:hover .box1 {
+    transform: translate(-40%, -40%);
+}
+.box2 {
+    position: absolute;
+    width: 61px; height: 20px;
+    background-color: green;
+    top: 26px; left: 1440px;
+    transform: translateX(-50%);
+}
+.box2:hover {
+    transform: translateX(0);
+}
+@media screen and (max-width : 1080px){
+    .box2 {
+        left: 1080px;
+    }
+}

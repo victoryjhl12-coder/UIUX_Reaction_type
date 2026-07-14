@@ -8,6 +8,6 @@
 @media screen and (max-width: 1599px ) {
     /* 선택자는 원하는대로 클래스 선택자 or 태그 선택자 등.. */
     .box {
-        background-color: azure;
+        background-color: rgb(208, 150, 255);
     }
 }
