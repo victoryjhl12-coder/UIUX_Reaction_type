@@ -1,0 +1,38 @@
+/* component - 반복되는 형태 수정, 유지보수 */
+.tr-3{transition: 0.3s}
+.tr-5{transition: 0.5s}
+.tr-7{transition: 0.7s}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto; margin-right: auto;
+}
+header {
+    height: 100px;
+    background-color: #333;
+ }
+main {
+    height: 100vh;
+}
+.s1-cd3 {
+    background-color: rgb(100, 156, 206);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.s1-cd3-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: auto;
+}
+.cd3-in {
+    background-color: #333;
+    height: 500px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+footer {
+    height: 500px;
+    background-color: #8f9fad;
+}
