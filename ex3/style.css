@@ -3,31 +3,30 @@
 .tr-5{transition: 0.5s}
 .tr-7{transition: 0.7s}
 .container {
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin-left: auto; margin-right: auto;
 }
 header {
     height: 100px;
-    background-color: #333;
+    background-color: #333333;
  }
-main {
+/* main {
     height: 100vh;
-}
+} */
 .s1-cd3 {
-    background-color: rgb(100, 156, 206);
+    background-color: rgb(151, 193, 230);
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .s1-cd3-con {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: row;
+    justify-content: center; */
     gap: 40px;
-    padding: auto;
 }
 .cd3-in {
-    background-color: #333;
+    background-color: #324975;
     height: 500px;
     flex-grow: 1;
     flex-basis: 0;
