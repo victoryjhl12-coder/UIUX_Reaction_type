@@ -3,8 +3,9 @@
 .tr-5{transition: 0.5s}
 .tr-7{transition: 0.7s}
 .container {
-    /* width: 100%; */
-    max-width: 1440px;
+    /* container는 최소 320px 최대 1440px 까지 유연하게 동작 */
+    /* 고정값을 주면 넘치니까 */
+    min-width: 320px; max-width: 1440px;
     margin-left: auto; margin-right: auto;
 }
 header {
@@ -28,6 +29,7 @@ header {
 .cd3-in {
     background-color: #324975;
     height: 500px;
+    /* row 상태에서 가로, column 상태에서 세로로 플렉스 그로우 적용*/
     flex-grow: 1;
     flex-basis: 0;
 }

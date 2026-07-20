@@ -5,16 +5,22 @@
     }
 }
 /* 1080이하 가로 3단 레이아웃 → 세로 3단 레이아웃 */
+/* 320~1080까지 동작 */
 @media screen and (max-width: 1080px){
     .s1-cd3-con {
+        /* 1080가지 상자 레이아웃 -> 세로 */
         flex-direction: column;
         overflow: hidden;
         padding-left: 80px; padding-right: 80px;
     }
     .cd3-in {
+        /* 범용성을 위해서  width 100%로 사용 */
+        /* width 와 flex-basis 같이 쓰면 안됌 충돌남 */
+        /* but 써야하니까 오토처리 함 */
+        /* width는 여기저기 쓰기 좋음 */
         width: 100%;
-        height: 300px;
-        flex-grow: 1;
+        flex-grow: 0;
+        /* flex- item 전용 너비 */
         flex-basis: auto;
     }
 }
@@ -26,6 +32,10 @@
     header {
         height: 80px;
         background-color: #549dda;
+    }
+    .s1-cd3-con {
+    /* 1080가지 상자 레이아웃 -> 세로 */
+    flex-direction: row;
     }
     footer {
         height: 210px;
