@@ -1,0 +1,11 @@
+body{height: 30px;}
+.notice-bar {
+    border: 1px solid red;
+    background-color: var(--main);
+    /* em 과 rem을 사용할때 위에서 떨어지는 값 생각해서 사용 */
+    /* 화면의 변화에 따라 같이 변함 */
+    height: 4vh;  min-height: 3vh;
+    display: flex; justify-content: center;
+    align-items: center; gap: 8px;
+    
+}

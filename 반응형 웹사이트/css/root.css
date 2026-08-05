@@ -1,0 +1,119 @@
+ :root {
+    /* 배경 컬러  */
+    --color-background-tertiary: #FAF9F5;
+    /* 메인 컬러 */
+    --color-text-info: #3266ad;
+    --color-text-info: #4682d5;
+    --color-ring-secondary: #3D3D3AB2;
+    --color-ring-success: #59913080;
+    --color-ring-info: #80AADD;
+
+    --font-text-size10: 10px;
+    --font-text-size12: 12px;
+    --font-text-size14: 14px;
+    --font-text-size16: 16px;
+    --font-text-size18: 18px;
+    --font-text-size20: 20px;
+    --font-text-size22: 22px;
+    --font-text-size24: 24px;
+    --font-text-size26: 26px;
+/* 반응형 단위로 들어가기 때문에 골라서 쓰는거임 */
+    /* --font-text-sz-rem: 1rem;
+    --font-text-sz-rem: 1.1rem;
+    --font-text-sz-rem: 1.2rem; */
+
+    --font-weight100: 100;
+    --font-weight200: 200;
+    --font-weight300: 300;
+    --font-weight400: 400;
+    --font-weight500: 500;
+    --font-weight600: 600;
+    --font-weight700: 700;
+    --font-weight800: 800;
+    --font-weight900: 900;
+
+    --color-wh: #fff;
+    --color-def: #333;
+
+    /* 배수 */
+    --num2: 2px; --num4: 4px; --num6: 6px; --num8: 8px; --num10: 10px; --num12: 12px; --num14: 14px; --num16: 16px; --num18: 18px; --num20: 20px; --num22: 22px; --num24: 24px; --num26: 26px; --num28: 28px; --num30: 30px; --num32: 32px; --num34: 34px; --num36: 36px; --num38: 38px; --num40: 40px; --num42: 42px; --num44: 44px; --num46: 46px; --num48: 48px; --num50: 50px; --num52: 52px; --num54: 54px; --num56: 56px; --num58: 58px; --num60: 60px; --num62: 62px; --num64: 64px; --num66: 66px; --num68: 68px; --num70: 70px; --num72: 72px; --num74: 74px; --num76: 76px; --num78: 78px; --num80: 80px; --num82: 82px; --num84: 84px; --num86: 86px; --num88: 88px; --num90: 90px; --num92: 92px; --num94: 94px; --num96: 96px; --num98: 98px; --num100: 100px; --num102: 102px; --num104: 104px; --num106: 106px; --num108: 108px; --num110: 110px; --num112: 112px; --num114: 114px; --num116: 116px; --num118: 118px; --num120: 120px; --num122: 122px; --num124: 124px; --num126: 126px; --num128: 128px; --num130: 130px; --num132: 132px; --num134: 134px; --num136: 136px; --num138: 138px; --num140: 140px; --num142: 142px; --num144: 144px; --num146: 146px; --num148: 148px; --num150: 150px; --num152: 152px; --num154: 154px; --num156: 156px; --num158: 158px; --num160: 160px; --num162: 162px; --num164: 164px; --num166: 166px; --num168: 168px; --num170: 170px; --num172: 172px; --num174: 174px; --num176: 176px; --num178: 178px; --num180: 180px;
+}
+
+/* STEP 01 · 공통 기반 + 상단 안내 바 + 헤더 */
+:root {
+  --main: var(--color-text-info);
+  --blue-dark: #2441e6;
+  --ink: #333;
+  --muted: #6f7178;
+  --line: #e3e4e8;
+  --soft-blue: #eef5ff;
+  --soft-gray: #f7f7f7;
+  --container: 80rem;
+  --radius-sm: .625rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+
+  /* 글자 사이즈 */
+  --text-xs: var(--font-text-size14);
+  --text-small: var(--font-text-size18);
+  --text-medium: var(--font-text-size20);
+  --text-large: var(--font-text-size26);
+
+  /* 글자 두께 */
+  --textw-xs: var(--font-weight300);
+  --textw-small: var(--font-weight500);
+  --textw-medium: var(--font-weight600);
+  --textw-large: var(--font-weight700);
+
+  /* 글자 색상 */
+  --color-default-light: var(--color-wh);
+  --color-default-dark: var(--color-def);
+
+  /* padding */
+  --padding-xs: var(--num10) var(--num16);
+}
+/* 전체 브라우저에 들어가는 xs글자 */
+.xs-text-cpn{
+    font-size: var(--text-xs);
+    font-weight: var(--text-small);
+}
+/* ----------전역------- */
+/* 전체 브라우저에 들어가는 기본 글자 색상 */
+.col-de-light {
+  color: var(--color-default-light);
+}
+.col-de-dark {
+  color: var(--color-default-dark);
+}
+/* ----------지역------- */
+/* 상단바에 들어가는 small */
+.small-text-header {
+    font-size: var(--text-small);
+    font-weight: var(--textw-medium);
+    color: var(--color-default-dark);
+}
+
+/* -------------버튼--------- */
+/* ----전역 버튼---- */
+.btn-xs-color {
+  display: inline-block;
+  padding: var(--padding-xs);
+  background-color: var(--main);
+  border-radius: var(--num10);
+  color: var(--color-default-light);
+  font-size: var(--text-small);
+  font-weight: var(--textw-medium);
+}
+.btn-xs-Ncolor {
+  display: inline-block;
+  padding: var(--padding-xs);
+  border-radius: var(--num10);
+  color: var(--color-default-dark);
+  font-size: var(--text-small);
+  font-weight: var(--textw-medium);
+  border: 1px solid var(--color-text-info);
+}
+
+
+
+/* ----지역 버튼---- */
