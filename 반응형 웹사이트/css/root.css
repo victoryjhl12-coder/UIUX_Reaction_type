@@ -71,6 +71,24 @@
 
   /* padding */
   --padding-xs: var(--num10) var(--num16);
+
+  /* 아이콘 */
+  --icon-fs-xs: var(--font-text-size20);
+  --icon-w-xs: var(--font-weight300);
+  --icon-fs-small: var(--font-text-size24);
+  --icon-w-small: var(--font-weight400);
+}
+.icon-fs-xs{
+  font-size: var(--icon-fs-xs);
+  font-weight: var(--icon-w-xs);
+}
+.icon-fs-small{
+  font-size: var(--icon-fs-small);
+  font-weight: var(--icon-w-small);
+}
+.circle-icon-xs{
+  font-size: var(--icon-fs-small);
+  font-weight: var(--icon-w-xs);
 }
 /* 전체 브라우저에 들어가는 xs글자 */
 .xs-text-cpn{
@@ -92,6 +110,7 @@
     font-weight: var(--textw-medium);
     color: var(--color-default-dark);
 }
+
 
 /* -------------버튼--------- */
 /* ----전역 버튼---- */
@@ -117,3 +136,22 @@
 
 
 /* ----지역 버튼---- */
+
+/* 아이콘 */
+/* ----전역 아이콘---- */
+
+
+
+/* ----이벤트(활성화/비활성화)--- */
+/* ----header---- */
+.li{
+  position: relative; 
+  /* 임의 코드 */
+  padding: 20px 0; display: inline-flex;}
+.li::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 2px;
+  background-color: var(--main);
+}
