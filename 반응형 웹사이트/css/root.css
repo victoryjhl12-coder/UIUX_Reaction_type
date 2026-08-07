@@ -17,6 +17,7 @@
     --font-text-size22: 22px;
     --font-text-size24: 24px;
     --font-text-size26: 26px;
+    --font-text-size40: 40px;
 /* 반응형 단위로 들어가기 때문에 골라서 쓰는거임 */
     /* --font-text-sz-rem: 1rem;
     --font-text-sz-rem: 1.1rem;
@@ -37,6 +38,7 @@
 
     /* 배수 */
     --num2: 2px; --num4: 4px; --num6: 6px; --num8: 8px; --num10: 10px; --num12: 12px; --num14: 14px; --num16: 16px; --num18: 18px; --num20: 20px; --num22: 22px; --num24: 24px; --num26: 26px; --num28: 28px; --num30: 30px; --num32: 32px; --num34: 34px; --num36: 36px; --num38: 38px; --num40: 40px; --num42: 42px; --num44: 44px; --num46: 46px; --num48: 48px; --num50: 50px; --num52: 52px; --num54: 54px; --num56: 56px; --num58: 58px; --num60: 60px; --num62: 62px; --num64: 64px; --num66: 66px; --num68: 68px; --num70: 70px; --num72: 72px; --num74: 74px; --num76: 76px; --num78: 78px; --num80: 80px; --num82: 82px; --num84: 84px; --num86: 86px; --num88: 88px; --num90: 90px; --num92: 92px; --num94: 94px; --num96: 96px; --num98: 98px; --num100: 100px; --num102: 102px; --num104: 104px; --num106: 106px; --num108: 108px; --num110: 110px; --num112: 112px; --num114: 114px; --num116: 116px; --num118: 118px; --num120: 120px; --num122: 122px; --num124: 124px; --num126: 126px; --num128: 128px; --num130: 130px; --num132: 132px; --num134: 134px; --num136: 136px; --num138: 138px; --num140: 140px; --num142: 142px; --num144: 144px; --num146: 146px; --num148: 148px; --num150: 150px; --num152: 152px; --num154: 154px; --num156: 156px; --num158: 158px; --num160: 160px; --num162: 162px; --num164: 164px; --num166: 166px; --num168: 168px; --num170: 170px; --num172: 172px; --num174: 174px; --num176: 176px; --num178: 178px; --num180: 180px;
+
 }
 
 /* STEP 01 · 공통 기반 + 상단 안내 바 + 헤더 */
@@ -58,6 +60,9 @@
   --text-small: var(--font-text-size18);
   --text-medium: var(--font-text-size20);
   --text-large: var(--font-text-size26);
+  
+  /* 지역 글자 사이즈 */
+  --text-logo: var(--font-text-size40);
 
   /* 글자 두께 */
   --textw-xs: var(--font-weight300);
@@ -65,11 +70,15 @@
   --textw-medium: var(--font-weight600);
   --textw-large: var(--font-weight700);
 
+  /* 지역 글자 두께 */
+  --textw-logo: var(--font-weight900);
+
   /* 글자 색상 */
   --color-default-light: var(--color-wh);
   --color-default-dark: var(--color-def);
 
   /* padding */
+  --padding-xss: var(--num2) var(--num6);
   --padding-xs: var(--num10) var(--num16);
 
   /* 아이콘 */
@@ -77,6 +86,11 @@
   --icon-w-xs: var(--font-weight300);
   --icon-fs-small: var(--font-text-size24);
   --icon-w-small: var(--font-weight400);
+
+  /* 라운디드(모서리 동글) */
+  --bd-radius2: var(--num2);
+  --bd-radius4: var(--num4);
+  --bd-radius6: var(--num6);
 }
 .icon-fs-xs{
   font-size: var(--icon-fs-xs);
@@ -85,6 +99,15 @@
 .icon-fs-small{
   font-size: var(--icon-fs-small);
   font-weight: var(--icon-w-small);
+}
+.icon-new {
+  background: linear-gradient(135deg, #8b7cf6, #5942d7);
+  padding: var(--padding-xss);
+  color: var(--color-default-light);
+  font-size: var(--text-xs);
+  font-weight: var(--textw-large);
+  border-radius: var(--bd-radius4);
+  position: absolute;
 }
 .circle-icon-xs{
   font-size: var(--icon-fs-small);
@@ -140,8 +163,16 @@
 /* 아이콘 */
 /* ----전역 아이콘---- */
 
-
-
+/* ----일반 컴포넌트 ---- */
+/* ----전역---- */
+button {cursor: pointer;}
+/* ----header---- */
+.logo {
+  font-size: var(--text-logo);
+  font-weight: var(--textw-logo);
+  color: var(--main);
+  letter-spacing: -4%;
+}
 /* ----이벤트(활성화/비활성화)--- */
 /* ----header---- */
 .li{
